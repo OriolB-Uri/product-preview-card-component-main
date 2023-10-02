@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: hsl(158, 36%, 37%);
+    --text: hsl(228, 12%, 48%);
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: 'Fraunces', serif;
+    background-color: hsl(30, 38%, 92%);
+    line-height: 1.7rem;
+}
+
+.product{
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden; /* Otra forma de aplicar el border radius del padre */
+    max-width: 500px;
+}
+
+.product__image{
+    width: 100%;
+    /* border-radius: 12px 12px 0px 0px; */
+}
+
+.product_category{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: 'Montserrat', serif;
+    color: var(--text);
+}
+
+.product__content{
+    padding: 1rem;
+}
+
+.product__description{
+    font-family: 'Montserrat', serif;
+    color: var(--text);
+}
+
+.product__prices{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.product__prices-current{
+    color: var(--primary);
+    font-size: 2.8rem;
+}
+
+.product__prices-old{
+    text-decoration:line-through;
+    font-family: 'Montserrat', serif;
+    color: var(--text);
+}
+
+.product__addtocart-button{
+    background-color: var(--primary);
+    color: white;
+    font-family: 'Montserrat', serif;
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    cursor:pointer;
+    font-size: 1.3rem;
+    border: 0;
+}
+
+@media (min-width: 900px){
+    .product{
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        
+    }
+
+    .product__image{
+        width: 50%;
+    }
+}
