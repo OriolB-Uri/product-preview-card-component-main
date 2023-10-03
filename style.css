@@ -78,12 +78,13 @@ body{
 @media (min-width: 900px){
     .product{
         display: flex;
-        max-width: 100%;
+        max-width: 1000px;
         align-items: center;
-        
+        height: 400px;
     }
 
     .product__image{
-        width: 50%;
+        width: 90%;
+        margin: 0 auto;
     }
 }
